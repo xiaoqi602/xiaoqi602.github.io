@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .card{
+            border-radius: 60px;
+            padding: 2rem;
+            display: flex;
+            gap: 1.2rem;
+            max-width: 900px;
+            width: 100%;
+            justify-content: center;
+        }
+        #banner{
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .left{
+            width: 35px;
+            height: auto;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 20px;
+            position: absolute;
+            z-index: 2;
+        }
+        .right{
+            width: 35px;
+            height: auto;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 20px;
+            position: absolute;
+            z-index: 2;
+        }
+        .banner{
+            max-width: 100%;
+            height: auto;
+            border-radius: 28px;
+            display: block;
+        }
+        .point{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+            bottom: 270px;
+            z-index: 2;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+        .dot{
+            width: 10px;
+            height: 10px;
+        }
+        @media(max-width:600px){
+            .card{
+                padding: 1rem;
+            }
+            .left,.right{
+                width: 32px;
+            }
+            .dot{
+                width:10px ;
+                height: 10px;
+            }
+            .point{
+                bottom: -16px;
+                gap: 0.5rem;
+            }
+            .left{
+                left: -84px;
+            }
+            .right{
+                right: -84px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div id="banner">
+            <img src="images\arrow1.png" alt="左"class="left">
+            <img src="images\banner1.jpg" alt="" class="banner">
+            <img src="images\arrow2.png" alt="右"class="right" >
+        </div>
+        <div class="point">
+            <img src="images\point1.png" alt="" class="dot">
+            <img src="images\point2.png" alt="" class="dot">
+            <img src="images\point1.png" alt="" class="dot">
+            <img src="images\point1.png" alt="" class="dot">
+        </div>
+    </div>
+</body>
+</html>
