@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAE</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(48, 47, 47);
+            color: #fff;
+            font-family: "Microcoft Yahei",sans-serif;
+            padding-top: 25px;
+            margin: 25px;
+        }
+        .box1{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            position: fixed;
+            top: 5px;
+            left: 0;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 40px;
+            background-color: rgb(48, 47, 47);
+            z-index: 999;
+        }
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .pro-wrap{
+            position: relative;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .pro-wrap>span:hover{
+            color: #46e07c;
+        }
+        .pro-menu{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 160px;
+            background: #121220;
+            padding: 12px 0;
+            display: none;
+        }
+        .pro-menu p{
+            padding: 6px 16px;
+            font-size: 14px;
+        }
+        .pro-menu p:hover{
+            background: #1e1e35;
+            color: #46e07c;
+        }
+        .box1 a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+        }
+        .btn{
+            padding-left: 20%;
+            display: flex;
+            gap: 16px;
+        }
+        .btn button{
+            padding: 7px 16px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .dl{
+            background: transparent;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        .xzzx{
+            background: #23c96c;
+            color: #000;
+        }
+        .box2{
+            min-height: 85vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 60px;
+            gap: 30px;
+            padding-top: 29.9%;
+            padding-right: 10%;
+            left: 20px;
+        }
+        .box2>p{
+            flex: 1;
+        }
+        .text{
+            flex-shrink: 0;
+        }
+        .text p{
+            font-size: 12px;
+            color: #fffdfd;
+            margin: 8px 0;
+        }
+        .bt{
+            font-size: 60px;
+        }
+        .button{
+            display: flex;
+            gap: 18px;
+            left: 25%;
+        }
+        .button button{
+            padding: 12px 28px;
+            border-radius: 3px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .green{
+            background: #23c96c;
+            color: #000;
+        }
+        .dark{
+            background: #222228;
+            color: #fff;
+            border: 1px solid#666;
+        }
+        .box2 a{
+            color: #6f706f;
+            font-size: 15px;
+            padding-top: 500px;
+        }
+        .box3{
+            width: 100%;
+            text-align: center;
+            padding: 60px 0;
+        }
+        #text{
+            background: linear-gradient(90deg,#104f25,#23c96c,#03ffd1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+        .box3 p{
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+        #ts{
+            padding: 10px 24px;
+            background: #23c96c;
+            color: #000;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        video{
+            display: block;
+            width: 80%;
+            max-width: 5000px;
+            margin: 60px auto;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+        <div class="box1">
+            <P>
+            <span class="title">TRAE</span>
+            <div class="pro-wrap">
+                <span id="proBtn">产品 v</span>
+                <div class="pro-menu" id="menuBox">
+                    <p>TRAE Work</p>
+                    <p>TRAE IDE</p>
+                    <p>TRAE 插件</p>
+                </div>
+            </div>
+            <a href="">企业版</a><a href="lmy.html">定价</a><a href="">文档</a><a href="2711.html">更新日志</a><a href="">社区</a><a href="">创造大赛</a>
+            </P>
+
+            <div class="btn">
+                <button class="dl">登录</button>
+                <button class="xzzx">下载中心</button>
+            </div>
+        </div>
+        <div class="box2">
+            <p>
+                <span class="bt">TRAE
+                <br>
+                <span style="color: #aaa;">智能无限，协作无间</span>
+                </span>
+            <div class="text">
+                    <p>TRAE Work:全新上线的智能工作助手</p>
+                    <p>TRAE IDE:你的专属AI开发工程师</p>
+                <div class="button">
+                    <button class="green">下载Work</button>
+                    <button class="dark">下载IDE</button> 
+                </div>      
+                <a href="treat.work.html">TRAE Work网页版></a>
+            </p>
+            </div>
+        </div>
+        <div class="box3">
+            <h2 id="text">全新TRAE Work</h2>
+            <p>桌面端、网页版和移动端全量上线</p>
+            <button id="ts">即刻探索TRAE Work</button>
+        </div>
+            <video controls poster="https://lf-cdn.trae.com.cn/obj/trae-com-cn/trae_website_prod_cn/static/image/solo-placeholder.7bfbd233.png" controlslist="nodownload noremoteplayback noplaybackrate" playsinline="" preload="metadata" webkit-playinline="true" x5-video-player-type="h5" x5-playsinline="true" x5-video-orientation="landscape|portrait"><source src="https://lf-cdn.trae.com.cn/obj/trae-com-cn/solo_mobile_launch_cn.mp4" type="video/mp4"></video>
+    <script>
+        const proBtn= document.getElementById('proBtn');
+        const menuBox=document.getElementById('menuBox');
+        proBtn.addEventListener('click',function(){
+            if(menuBox.style.display==='block'){
+                menuBox.style.display='none';
+            }else{
+                menuBox.style.display='block';
+            }
+        })
+        document.addEventListener('click',function(e){
+            if(!proBtn.contains(e.target)&&!menuBox.contains(e.target)){
+                menuBox.style.display='none';
+            }
+        })
+    </script>
+</body>
+</html>
